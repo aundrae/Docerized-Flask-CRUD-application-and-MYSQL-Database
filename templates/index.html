@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <form method="POST" action="/">
+      <input type="text" name="title">
+      <input type="submit" value="Add">
+    </form>
+
+    <h1>Books</h1>
+      {% for book in books %}
+      <p>{{book.title}}</p>
+        <form class="" action="./update" method="POST">
+          <input type="hidden" name="oldTitle" value="{{book.title}}">
+          <input type="text" name="updatedTitle" value='{{book}}'>
+          <input type="submit" name="" value="Update">
+        </form>
+        <form class="" action="./delete" method="POST">
+          <input type="hidden" name="title_to_delete" value="{{book.title}}">
+          <input type="submit" name="" value="Delete">
+        </form>
+      {% endfor %}
+
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+NAME: JUSTIN RAMJATTAN
+STUDENT ID: 816000989
+ASSIGNMENT #1
+
+I collected the flask application from:
+https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
+I used the mysql documentation to connect the flask application. The link is: 
+https://hub.docker.com/_/mysql
+
+To use the application:
+1) To create an item enter the name and click the add button.
+2) The items under the books header are read from the database.
+3) To update an item check enter a new title in the respective input field and click update.
+4) To delete an item click the delete button under the respective item.
